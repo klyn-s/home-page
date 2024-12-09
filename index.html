@@ -24,27 +24,24 @@
         text-align: center;
         font-size: 140px;
         font-weight: 200;
-        margin: -120px 0 20px 0;
+        margin: 0 0 20px 0;
+        text-transform: uppercase;
       }
 
       h2 {
         font-family: 'Pinyon Script', serif;
-        text-align: center;
-        font-size: 100px;
-        font-style: italic;
-        font-weight: normal;
-        margin: 20px 0 0 0;
+        
       }
 
       h3 {
-        font-size: 30px;
+        font-size: 48px;
         font-style: italic;
         margin: 10px 0;
         font-weight: 600;
       }
 
       h4 {
-        font-size: 20px;
+        font-size: 30px;
         font-style: italic;
         font-weight: 200;
       }
@@ -119,37 +116,40 @@
         color: blue;
       }
 
-
-      .background {
-        background-color: #000008;
-      }
       
       #about-me,
       #view-project {
         width: 1200;
         height: 832px;
+        background-color: #000008;
       }
 
       #about-me {
         background-color: #fefefe;
-        margin: 50px 50px;
+        margin: 50px;
       }
       
       #about-me h4 {
         text-align: center;
+      }
+      
+      #about-me .details {
+        width: 35%
       }
 
       
 
       /* View All Work text */
       #view-project h3 {
-        width: 529px;
-        text-align: center;
+        text-align: right;
+        margin: 0 80px 0 0;
+        position: relative;
+        top: 30%;
       }
       
       #view-project a {
-        color: #
-        
+        color: #fefefe;
+        text-decoration: none;
       }
 
       
@@ -162,44 +162,11 @@
         gap: 20px;
         float: right;
         position: relative;
-        top: 40%;
+        top: 30%;
         margin-right: 80px;
       }
 
 
-
-      /* Greeting text */
-      .greeting {
-        width: 607px;
-        height: 98px;
-        text-align: center;
-        color: #282828;
-        font-size: 36px;
-        font-family: 'Cormorant Infant', serif;
-        font-style: italic;
-        font-weight: 700;
-        word-wrap: break-word;
-      }
-
-      /* Name text */
-      .name {
-        color: #282828;
-        font-size: 96px;
-        font-family: 'Cormorant Infant', serif;
-        font-weight: 300;
-        word-wrap: break-word;
-      }
-
-      /* Bio text */
-      .bio {
-        width: 429px;
-        height: 125px;
-        color: black;
-        font-size: 16px;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 400;
-        word-wrap: break-word;
-      }
     </style>
   </head>
 
@@ -224,21 +191,22 @@
         </ul>
       </div>
 
-      <!-- Headers -->
-      <h2>welcome to my</h2>
+      <!-- Header -->
       <h1>portfolio</h1>
-
-      <div class="background">
+     
       <!-- About Me Section -->
+      
       <div id="about-me">
         <h4>it’s a pleasure to meet you!</h4>
-        <h3>i’m Kaitlyn</h3>
-        <p>and i’m a design student in global business and digital art program at university of Waterloo.<br>i have a passion for typography, graphic design, and publication design</p>
+        <div class="details">
+        <h3>I’m Kaitlyn,</h3>
+        <p>a design student in global business and digital art program at university of Waterloo. I have a passion for photography and publication design.</p>
+      </div>
       </div>
 
       <!-- Project Section -->
       <div id="view-project">
-        <h3><a href="https://klyn-s.github.io/project-page/">( View More Project Details →)</a></h3>
+        <h3><a href="https://klyn-s.github.io/project-page/">( View More Work →)</a></h3>
         <div class="images">
           <img src="single page3.png" alt="sodoi magazine cover" style="width: 254px">
           <img src="lady on the bench.heic" alt="street photograph of a lady sitting on a bench" style="width: 254px">
@@ -246,7 +214,8 @@
         </div>
       </div>
     </div>
-  </div>
+   
+  
 
 
 
