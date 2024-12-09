@@ -24,13 +24,14 @@
         text-align: center;
         font-size: 140px;
         font-weight: 200;
-        margin: 0 0 20px 0;
+        margin: 50px 0 0 0;
+        line-height: 1;
         text-transform: uppercase;
       }
 
       h2 {
         font-family: 'Pinyon Script', serif;
-        
+
       }
 
       h3 {
@@ -86,7 +87,6 @@
         margin: 0;
         padding: 0;
         list-style: none;
-
       }
 
       .nav ul.left {
@@ -116,57 +116,94 @@
         color: blue;
       }
 
-      
-      #about-me,
-      #view-project {
-        width: 1200;
-        height: 832px;
-        background-color: #000008;
-      }
 
       #about-me {
         background-color: #fefefe;
-        margin: 50px;
+        height: 732px;
+        border: 50px solid #000008;
       }
-      
+
       #about-me h4 {
         text-align: center;
       }
-      
+
       #about-me .details {
-        width: 35%
+        width: 35%;
+        margin: 50px;
       }
 
-      
+      /* View More Work */
+      #view-project {
+        height: 632px;
+        background-color: #000008;
+      }
 
-      /* View All Work text */
       #view-project h3 {
         text-align: right;
         margin: 0 80px 0 0;
         position: relative;
-        top: 30%;
+        top: 20%;
       }
-      
+
       #view-project a {
         color: #fefefe;
         text-decoration: none;
       }
 
-      
+      #view-project a:hover {
+        color: #d8bfd8;
+      }
+
       /* Images */
       .images {
-        height: 394px;
         display: inline-flex;
         justify-content: center;
         align-items: flex-start;
         gap: 20px;
         float: right;
         position: relative;
-        top: 30%;
+        top: 20%;
         margin-right: 80px;
       }
 
+      .commission-prices {
+        font-family: 'Open Sans', sans-serif;
+        width: 80%;
+        border-collapse: collapse;
+        margin: 120px;
+      }
 
+      .commission-prices h4 {
+        position: relative;
+        float: right;
+        text-align: center;
+      }
+      
+      .commission-prices thead {
+        background-color: #d8bfd8;
+      }
+
+      .commission-prices th,
+      .commission-prices td {
+        border: 1px solid #282828;
+        padding: 10px;
+        text-align: left;
+      }
+
+      .commission-prices th {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+
+      /* Footer */
+      .footer {
+
+        text-align: center;
+        margin-top: 40px;
+        font-size: 14px;
+        color: #aaa;
+      }
     </style>
   </head>
 
@@ -193,15 +230,14 @@
 
       <!-- Header -->
       <h1>portfolio</h1>
-     
+
       <!-- About Me Section -->
-      
       <div id="about-me">
         <h4>it’s a pleasure to meet you!</h4>
         <div class="details">
-        <h3>I’m Kaitlyn,</h3>
-        <p>a design student in global business and digital art program at university of Waterloo. I have a passion for photography and publication design.</p>
-      </div>
+          <h3>I’m Kaitlyn,</h3>
+          <p>a design student in global business and digital art program at university of Waterloo. I have a passion for photography and publication design.</p>
+        </div>
       </div>
 
       <!-- Project Section -->
@@ -213,17 +249,50 @@
           <img src="earing2.jpg" alt="close up photo of dngle earing" style="width: 254px">
         </div>
       </div>
+
+      <table class="commission-prices">
+        <h4>Commissions</h4>
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Description</th>
+            <th>Price (CAD)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Zine Design</td>
+            <td>Custom layout and design for a 12-page zine</td>
+            <td>$150</td>
+          </tr>
+          <tr>
+            <td>Zine Expansion</td>
+            <td>Additional pages (per 4-page increment)</td>
+            <td>$30</td>
+          </tr>
+          <tr>
+            <td>Photography - Portrait</td>
+            <td>1-hour portrait session with 10 edited photos</td>
+            <td>$200</td>
+          </tr>
+          <tr>
+            <td>Photography - Event</td>
+            <td>2-hour event coverage with 20 edited photos</td>
+            <td>$400</td>
+          </tr>
+          <tr>
+            <td>Photography - Additional Photos</td>
+            <td>Extra edited photos (per photo)</td>
+            <td>$20</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+      <div class="footer">
+        <p>@kaitlyn’s portfolio</p>
+      </div>
     </div>
-   
-  
-
-
-
-
-
-
-    <!--<div class="footer">
-      <p>@kaitlyn’s portfolio</p>
-    </div> -->
   </body>
 </html>
